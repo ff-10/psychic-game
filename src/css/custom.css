@@ -1,0 +1,84 @@
+#mainContainer {
+    color: #FFFFFF;
+}
+
+.soft-box {
+    background-color: rgba(0, 0, 0, .2);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.playerLetterHistory {
+    text-shadow: 0 0 5px #ff0033;
+}
+
+.already-used-letter::first-letter {
+    color: teal;
+    text-shadow: 0 0 5px teal;
+    font-weight: bold;
+}
+
+.already-used-letter {
+    visibility: hidden;
+    color: #50cd11;
+    letter-spacing: 1px;
+}
+
+.howToPlayBox {
+    width: 150px;
+    height: 50px;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    border: 2px solid gray;
+    border-bottom: 5px solid gray;
+    transition: all 300ms;
+}
+
+.howToPlayBox:hover {
+    background-color: lavenderblush;
+}
+
+.howToPlayBox:active {
+    border-bottom: 0;
+}
+
+.howToPlayBox::after {
+    content: "How to Play ?";
+}
+
+.howToPlayAlert {
+    background-color: rgba(0, 0, 0, .8);
+    width: 600px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 3px groove darkcyan;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 2;
+    color: goldenrod;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+}
+
+.howToPlayAlert > p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.howToPlayAlert .close {
+    background-color: #ff0033;
+    padding: 5px;
+    position: absolute;    
+    border-radius: 3px;
+}
