@@ -95,6 +95,5 @@ const reset = () => {
     domSide.updateChoice(choices);
     domSide.updateHistory(letterHistory);
     const interval = 2300;
-    setTimeout(() => domSide.printPlayerLetter("_"), interval);
-    setTimeout(() => domSide.printSecretLetter("_"), interval);
+    setTimeout(() => {domSide.printPlayerLetter("_"); domSide.printSecretLetter("_");}, interval);
 }
